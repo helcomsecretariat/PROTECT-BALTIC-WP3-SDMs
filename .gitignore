@@ -1,0 +1,22 @@
+# Ignore observation data (not open yet)
+observations/fish/
+observations/macrophytes/
+observations/invertebrates/
+
+# Ignore large model files
+models/outputs/
+models/outputs_extra/
+products/outputs/
+
+# Large data / outputs
+*.tif
+*.tiff
+*.nc
+*.RData
+*.rds
+
+# R extras
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
