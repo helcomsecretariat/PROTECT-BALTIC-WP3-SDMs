@@ -1,0 +1,21 @@
+Species group,Dataset,Source
+Fish,Coastal fishing surveys from the Swedish coastal environmental monitoring programme,https://www.slu.se/en/about-slu/organisation/departments/aquatic-resources/databases/database-for-coastal-fish-kul/
+Fish,Coastal fishing surveys from the Natural Resources Institute of Finland,Data acquired through personal correspondence
+Fish,"Coastal fishing surveys from the Institute of Food Safety, Animal Health and Environment (BIOR, Latvia)",Data acquired through personal correspondence
+Fish,Coastal fishing surveys from the National Marine Fisheries Research Institute (Poland),Data acquired through personal correspondence
+Fish,Coastal fishing surveys from the Thünen Institute of Baltic Sea Fisheries (Germany),Data acquired through personal correspondence
+Fish,Coastal fishing surveys from the Nature Research Centre (Lithuania),Data acquired through personal correspondence
+Fish,ICES Baltic International Trawl Survey (BITS),https://datras.ices.dk/data_products/download/download_data_public.aspx
+Fish,ICES International Bottom Trawl Survey (IBTS),https://datras.ices.dk/data_products/download/download_data_public.aspx
+Fish,Swedish national bottom trawl surveys,Data acquired through personal correspondence
+Fish,Herring Acoustic Survey in the North Sea (HERAS),https://acoustic.ices.dk/submissions
+Fish,Gulf of Riga Acoustic Herring Survey (GRAHS),https://acoustic.ices.dk/submissions
+Fish,Baltic International Acoustic Survey (BIAS),https://acoustic.ices.dk/submissions
+Fish,Baltic Acoustic Spring Survey (BASS),https://acoustic.ices.dk/submissions
+Macrophytes/Invertebrates,"Benthic species observations supplied to the Protect Baltic data call by the Federal Agency for Nature Conservation (BfN, Germany)",https://maps.helcom.fi/website/biodiversity/
+Macrophytes/Invertebrates,"Benthic species observations supplied to the Protect Baltic data call by the Environmental Protection Agency (MST, Denmark)",https://maps.helcom.fi/website/biodiversity/
+Macrophytes/Invertebrates,"Benthic species observations supplied to the Protect Baltic data call by the Estonian Marine Institute, University of Tartu (Estonia)",https://maps.helcom.fi/website/biodiversity/
+Macrophytes/Invertebrates,Benthic species observation collated within the Protect Baltic data call from the International Council for the Exploration of the Sea (ICES),https://data.ices.dk/downloads?guid=c27961ba-8200-4699-bb83-969b23d1ecb6 
+Macrophytes/Invertebrates,Finnish inventory data of underwater marine biodiversity,https://doi.org/10.5281/zenodo.13822191
+Macrophytes/Invertebrates,Swedish national benthic observation survey data collated by the Swedish Geological Survey,Data acquired through personal correspondence
+Macrophytes,Danish national macrophyte observation survey data collated by the Danish Environmental Protection Agency,Data acquired through personal correspondence
