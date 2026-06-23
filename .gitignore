@@ -1,8 +1,3 @@
-# Ignore observation data (not open yet)
-observations/fish/
-observations/macrophytes/
-observations/invertebrates/
-
 # Ignore large model files
 models/outputs/
 models/outputs_extra/
@@ -13,7 +8,7 @@ products/outputs/
 *.tiff
 *.nc
 *.RData
-*.rds
+#*.rds
 
 # R extras
 .Rproj.user/
