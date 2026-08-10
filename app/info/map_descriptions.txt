@@ -1,0 +1,23 @@
+Binary (strict):
+- Likely unsuitable - areas with probabilities predicted below the presence threshold.
+- Possibly suitable - areas with probabilities above the presence threshold, but with confidence values below 50 and probabilities below the mid-point of the minimum and maximum predicted presence probabilities.
+- Likely suitable - areas with probabilities above the presence threshold, but with either confidence values below 50 OR probabilities below the mid-point of the minimum and maximum predicted presence probabilities.
+- Very likely suitable - areas with probabilities above the presence threshold and with both confidence values above 50 and probabilities above the mid-point of the minimum and maximum predicted presence probabilities.
+
+Binary:
+- Unsuitable - areas with probabilities below the presence threshold.
+- Suitable - areas with probabilities above the presence threshold.
+
+Binary (envelope): This map shows the binary distributions where the distribution for species dependent on hard substrate has been masked by a layer corresponding to areas with >= 10% hard bottom.
+
+Binary (confidence):
+- Unsuitable (high confidence) - areas with probabilities below the presence threshold and with confidence scores above 50.
+- Unsuitable (low confidence) - areas with probabilities below the presence threshold but with confidence scores below 50.
+- Suitable (low confidence) - areas with probabilities above the presence threshold but with confidence scores below 50.
+- Suitable (high confidence) - areas with probabilities above the presence threshold and with confidence scores above 50.
+
+Delta: The scale represents relative probabilities above the presence threshold. Areas with a value of zero represent areas below the presence threshold. Areas with a value of 1 represent the lowest probability above the presence threshold. Areas with a value of 100 represent the highest probability above the presence threshold.
+
+Probability: The scale represents predicted probability outputs from the ensemble species distribution model.
+
+Confidence: The scale represents model confidence measured as agreement between members of the ensemble species distribution model (committee averaging). A value of 100 indicates that all members predicted the same outcome (presence or absence). A value of 0 indicates maximum disagreement between the members (half of the members predicting presence and half predicting absence).
