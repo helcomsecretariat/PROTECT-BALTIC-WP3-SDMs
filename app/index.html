@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WP3 Species Distribution Models (PNG)</title>
+  <title>Baltic Sea SDMs</title>
   <style>
     :root {
       --blue-dark:   #0068B4;
@@ -548,10 +548,10 @@
   <!-- CENTRE PANEL -->
   <div class="centre-panel">
     <div class="map-tabs">
-      <button class="map-tab active" data-map="binary_strict_png">Binary (strict)</button>
+      <button class="map-tab active" data-map="binary_confidence_png">Binary (confidence)</button>
+      <button class="map-tab" data-map="binary_strict_png">Binary (strict)</button>
       <button class="map-tab" data-map="binary_png">Binary</button>
       <button class="map-tab" data-map="binary_envelope_png">Binary (envelope)</button>
-      <button class="map-tab" data-map="binary_confidence_png">Binary (confidence)</button>
       <button class="map-tab" data-map="delta_png">Delta</button>
       <button class="map-tab" data-map="probability_png">Probability</button>
       <button class="map-tab" data-map="confidence_png">Confidence</button>
@@ -593,14 +593,14 @@
     binary_png: "- Unsuitable - areas with probabilities below the presence threshold.\n- Suitable - areas with probabilities above the presence threshold.",
     binary_confidence_png: "- Unsuitable (high confidence) - areas with probabilities below the presence threshold and with confidence scores above 50.\n- Unsuitable (low confidence) - areas with probabilities below the presence threshold but with confidence scores below 50.\n- Suitable (low confidence) - areas with probabilities above the presence threshold but with confidence scores below 50.\n- Suitable (high confidence) - areas with probabilities above the presence threshold and with confidence scores above 50.",
     binary_envelope_png: "This map shows the binary distributions where the distribution for species dependent on hard substrate has been masked by a layer corresponding to areas with >= 10% hard bottom.",
-    delta_png: "The scale represents relative probabilities above the presence threshold. Areas with a value of zero represent areas below the presence threshold. Areas with a value of 1 represent the lowest probability above the presence threshold. Areas with a value of 100 represent the highest probability above the presence threshold.",
+    delta_png: "The scale represents relative probabilities above the presence threshold. Areas with a value of zero represent areas below the presence threshold. Areas with a value of 1 represent the lowest probability above the presence threshold. Areas with a value of 1000 represent the highest probability above the presence threshold.",
     probability_png: "The scale represents predicted probability outputs from the ensemble species distribution model.",
     confidence_png: "The scale represents model confidence measured as agreement between members of the ensemble species distribution model (committee averaging). A value of 100 indicates that all members predicted the same outcome (presence or absence). A value of 0 indicates maximum disagreement between the members (half of the members predicting presence and half predicting absence)."
   };
   const allSpecies = { fish: [], invertebrates: [], macrophytes: [] };
   let currentGroup = 'fish';
   let currentSpecies = null;
-  let currentMapType = 'binary_strict_png';
+  let currentMapType = 'binary_confidence_png';
 
   // ── CSV parser (handles RFC 4180 quoted fields) ──────────────────────────────
   function parseCSV(text) {
