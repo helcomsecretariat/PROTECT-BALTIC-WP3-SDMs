@@ -420,5 +420,11 @@ readr::write_excel_csv(dfm, "outputs/macrophytes/macrophytes_details.csv")
 readr::write_excel_csv(dfi, "outputs/invertebrates/invertebrates_details.csv")
 
 df <- rbind(dff, dfm, dfi)
+
+# Fix some incorrect full names
+df$full_name[df$scientific_name == "Bathyporeia.guilliamsonia"] <- "Bathyporeia guilliamsoniana"
+df$full_name[df$scientific_name == "Crassicorophium.crassicor"] <- "Crassicorophium crassicorne"
+df$full_name[df$scientific_name == "Prionospio.multibranchiat"] <- "Prionospio multibranchiata"
+
 readr::write_excel_csv(df, "outputs/WP3_species_list.csv")
 
